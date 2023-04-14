@@ -1,10 +1,6 @@
 
-def gcd_(a, b):
-    if b == 0:
-        return a
-    else:
-        return gcd_(b, a % b)
-
-
-a, b = map(int, input().split())
-print('1'*gcd_(a, b))
+import sys
+lines = sys.stdin.readlines()
+for line in lines:
+    A,B = map (int, line.split())
+    print(A+B)
