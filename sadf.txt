@@ -1,0 +1,30 @@
+# 풀이 1
+payment = input("Input payment type > ") # cash 또는 card 또는 non을 입력받음
+money = int(input("Input the money you have > ")) # 얼마의 돈을 가졌는지 입력받음
+
+if (payment가 "cash"인지 조건): #payment가 현금
+    if (돈이 3000원 이상):
+        print("택시를 타고 가세요.")
+    else: 
+        print("걸어가세요")
+elif (payment가 "card"인지 조건): #payment가 카드
+    if (돈이 3000원 이상):
+        print("택시를 타고 가세요")
+    else:
+        print("걸어가세요")
+else : #payment가 non
+    print("걸어가세요")
+
+
+#풀이 2
+payment = input("Input payment type > ") # cash 또는 card 또는 non을 입력받음
+money = int(input("Input the money you have > ")) # 얼마의 돈을 가졌는지 입력받음
+
+if payment == 'cash' and money >= 3000: #payment가 현금이면서 3000원 이상
+    print("택시를 타고 가세요.")
+elif payment == 'card' and money>=3000: #payment가 카드면서 3000원 이상
+    print("택시를 타고 가세요.")
+else: # payment가 non이거나 돈이 3000원 미만
+    print("걸어가세요.")
+
+
