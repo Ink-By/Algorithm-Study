@@ -5,7 +5,7 @@ n, k = map(int,sys.stdin.readline().split())
 result = [0] * 100001
 
 def BFS(n):
-    que = deque([n]) 
+    que = deque([n])
     while que:
         a = que.popleft()
         if a == k :
@@ -15,5 +15,4 @@ def BFS(n):
             if 0<=next<100001 and not result[next]:
                 result[next] = result[a] + 1
                 que.append(next)
-                
 BFS(n)
